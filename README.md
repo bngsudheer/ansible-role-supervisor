@@ -21,6 +21,8 @@ Dependencies
 Example Playbook
 ----------------
 
+Example playbook
+
   - hosts: testnode
     user: root
     roles:
