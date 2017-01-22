@@ -16,7 +16,7 @@ Default variables:
 
 Dependencies
 ------------
-
+ None
 
 Example Playbook
 ----------------
@@ -25,10 +25,6 @@ Example Playbook
     user: root
     roles:
         - { role: bngsudheer.supervisor, unix_http_server_usernane: myadminusername, unix_http_server_password: mypassword}
-   
-    - hosts: servers
-      roles:
-         - { role: bngsudheer.supervisor }
 
 License
 -------
