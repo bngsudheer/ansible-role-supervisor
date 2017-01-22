@@ -21,12 +21,12 @@ Dependencies
 Example Playbook
 ----------------
 
-Example playbook
-
+```yaml
   - hosts: testnode
     user: root
     roles:
         - { role: bngsudheer.supervisor, unix_http_server_usernane: myadminusername, unix_http_server_password: mypassword}
+```
 
 License
 -------
