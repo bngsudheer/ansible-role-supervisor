@@ -1,0 +1,4 @@
+---
+# vars file for supervisor
+unix_http_server_usernane: admin
+unix_http_server_password: secret

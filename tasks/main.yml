@@ -1,0 +1,15 @@
+---
+- name: Install the supervisor package
+  yum: pkg={{item}} state=installed
+  with_items:
+    - supervisor
+
+- name: Create the log directory
+  file: 
+      path: /var/log/supervisord/
+      state: directory
+
+- name: Configure supervisor
+  template: 
+    src: supervisord.conf.j2
+    dest: /etc/supervisord.conf
